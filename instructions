@@ -1,0 +1,5 @@
+# rasa train
+# rasa interactive  -m models/20200422-234857.tar.gz --endpoints endpoints.yml
+# json-server --watch db.json (Start json server)
+# rasa run actions --port 5055 (Start Rasa action)
+# rasa run -m models --enable-api --cors "*" --debug (Start the employee bot)

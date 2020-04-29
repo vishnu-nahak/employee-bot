@@ -1,0 +1,109 @@
+actions:
+- action_EmployeeID_Empty_Slot
+- action_employee_designation
+- action_employee_dob
+- action_employee_emailid
+- action_employee_firstname
+- action_employee_id_designation
+- action_employee_id_firstname
+- action_employee_id_lastname
+- action_employee_id_emailid
+- action_employee_id_dob
+- action_employee_lastname
+- utter_ask_employeeid
+- utter_cheer_up_response
+- utter_did_that_help_response
+- utter_employee_designation_template
+- utter_employee_dob_template
+- utter_employee_emailid_template
+- utter_employee_firstname
+- utter_employee_firstname_template
+- utter_employee_id_confirmation
+- utter_employee_lastname_template
+- utter_failure_response
+- utter_goodbye_response
+- utter_greet_response
+- utter_happy_response
+- utter_iamabot_response
+- utter_out_of_scope
+- utter_success_response
+- utter_thankyou_response
+- utter_wrong_input_for_platform_response
+entities:
+- empid
+- information
+forms:
+- employee_details_form
+intents:
+- employee_id_designation
+- employee_id_firstname
+- employee_id_lastname
+- employee_id_emailid
+- employee_id_dob
+- greet
+- employee_firstname
+- employee_designation
+- employee_lastname
+- employee_emailid
+- employee_dob
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- out_of_scope
+responses:
+  utter_ask_employeeid:
+  - text: Can you please provide the employee ID to continue?
+  utter_cheer_up_response:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help_response:
+  - text: Did that help you?
+  utter_employee_designation_template:
+  - text: Employee designation is {variableforemployeedesignation}
+  utter_employee_dob_template:
+  - text: Employee's date of birth is {variableforemployeedob}
+  utter_employee_emailid_template:
+  - text: Employee's email id is {variableforemployeeemailid}
+  utter_employee_firstname:
+  - text: Sure!
+  utter_employee_firstname_template:
+  - text: Employee's first name is {variableforemployeefirstname}
+  utter_employee_id_confirmation:
+  - text: 'Here the details of your inputs:</br> Employee ID: {employeeid} '
+  utter_employee_lastname_template:
+  - text: Employee's last name is {variableforemployeelastname}
+  utter_goodbye_response:
+  - text: Bye
+  utter_greet_response:
+  - text: Hi, How are you doing?
+  utter_happy_response:
+  - text: Great, carry on!
+  utter_iamabot_response:
+  - text: I am a bot, powered by Rasa.
+  utter_out_of_scope:
+  - text: Sorry, I can’t deal with that request.
+  - text: I'm sorry, I can't handle that request.
+  - text: I can't help you with that, I'm sorry.
+  - text: Even a Rasa bot is not completely perfect - it seems like I can't handle
+      that request.
+  utter_thankyou_response:
+  - text: Thank you. Have a nice day!!)
+  utter_wrong_input_for_platform_response:
+  - text: Wrong input please provide a valid input Ex.(EMP 001, EMP 002 etc)
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+slots:
+  employeeDetailSlot:
+    type: text
+  employeeid:
+    auto_fill: false
+    type: unfeaturized
+  employeeidentity:
+    auto_fill: false
+    type: unfeaturized  
+  requested_slot:
+    type: unfeaturized
