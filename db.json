@@ -6,7 +6,7 @@
         "last_name": "Nahak",
         "designation": "AI Developer",
         "email_id": "vishnunahak23@gmail.com",
-        "dob": "23-06-1993"
+        "dob": "23-06-xxxx"
       },
       {
         "id": "EMP 002",
@@ -14,7 +14,7 @@
         "last_name": "Patil",
         "designation": "Chatbot Developer",
         "email_id": "himanshu@gmail.com",
-        "dob": "21-03-1995"
+        "dob": "21-03-xxxx"
       },
       {
         "id": "EMP 003",
@@ -22,7 +22,7 @@
         "last_name": "Sharama",
         "designation": "Software Developer",
         "email_id": "suresh@gmail.com",
-        "dob": "19-08-1991"
+        "dob": "19-08-xxxx"
       },
       {
         "id": "EMP 004",
@@ -30,7 +30,7 @@
         "last_name": "Mishara",
         "designation": "Software Engineer",
         "email_id": "ashok@gmail.com",
-        "dob": "05-09-1990"
+        "dob": "05-09-xxxx"
       },
       {
         "id": "EMP 005",
@@ -38,7 +38,7 @@
         "last_name": "Patil",
         "designation": "ML Developer",
         "email_id": "preeti@gmail.com",
-        "dob": "17-12-1988"
+        "dob": "17-12-xxxx"
       },
       {
         "id": "EMP 012",
