@@ -26,8 +26,8 @@ class EmployeeDetailsForm(FormAction):
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
         return { "employeeid":[self.from_text()] }
     @staticmethod
-    def sample_flight_platform_for_booking_tickets() -> List[Text]:
-        """ Database of Supported Station"""
+    def sample_employee_id() -> List[Text]:
+        """ Database of Supported Employee ID"""
         return ["EMP 001","EMP 002","EMP 003","EMP 004","EMP 005","EMP 006"]
     def validate_employeeid(
         self,
@@ -36,7 +36,7 @@ class EmployeeDetailsForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> Optional[Text]:
-        if value in self.sample_flight_platform_for_booking_tickets():
+        if value in self.sample_employee_id():
             return {'employeeid': value}
         else:
             dispatcher.utter_message(template="utter_wrong_input_for_platform_response")
